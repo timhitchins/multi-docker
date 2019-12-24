@@ -16,7 +16,7 @@ after_sucess:
   - docker build -t timhitchins/multi-worker ./worker
   # Log in to the docker CLI
   # Do it this way to avoid the multistep process for loging in
-  - echo "$DOCKER_PASWORD" | docker login -u "$DOCKER_ID" --password-stdin 
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
   # Take those images push them to docker hub 
   - docker push timhitchins/multi-client
   - docker push timhitchins/multi-nginx
