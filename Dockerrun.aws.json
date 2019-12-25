@@ -5,7 +5,7 @@
       "name": "client",
       "image": "timhitchins/multi-client",
       "hostname": "client",
-      "esential": false,
+      "essential": false,
       "memory": 128
     },
     {
